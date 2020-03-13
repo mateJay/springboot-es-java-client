@@ -12,7 +12,7 @@
     <artifactId>es-java-high-level-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>es-java-high-level-client</name>
-    <description>Demo project for Spring Boot</description>
+    <description>springboot 整合高版本es</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -41,6 +41,11 @@
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
             <version>7.5.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <dependency>

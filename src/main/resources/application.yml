@@ -1,1 +1,8 @@
+spring:
+  es:
+    hostName: '172.17.171.254'
+    port: 23991
+    songIndex: 'lds_test_songs_v5'
 
+server:
+  port: 8888
