@@ -6,5 +6,4 @@ package com.matejay.es.constant;
 public class PropertyKeyConst {
     public static final String HOST_NAME = "hostName";
     public static final String PORT = "port";
-    public static final String INDEX = "index";
 }

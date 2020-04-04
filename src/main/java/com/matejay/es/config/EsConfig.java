@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
+/**
+ * es 配置信息
+ */
 @Configuration
 @ConfigurationProperties(prefix = "spring.es")
 public class EsConfig {

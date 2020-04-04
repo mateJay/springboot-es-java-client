@@ -1,6 +1,6 @@
 spring:
   es:
-    hostName: '172.17.171.254'
+    hostName: 'xx.xx.xx.xx'
     port: 23991
     songIndex: 'lds_test_songs_v5'
 

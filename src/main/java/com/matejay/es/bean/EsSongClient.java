@@ -1,7 +1,6 @@
 package com.matejay.es.bean;
 
 import com.matejay.es.config.EsConfig;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,15 +8,13 @@ import org.springframework.context.annotation.Configuration;
  * 配置es client bean
  */
 @Configuration
-public class EsClient {
-
-    @Autowired
-    private EsConfig esConfig;
+public class EsSongClient {
 
     @Bean(initMethod = "init", destroyMethod = "close")
-    public EsClientBean buildEsClient() {
+    public EsClientBean buildEsSongClient(EsConfig esConfig) {
         EsClientBean esClientBean = new EsClientBean();
         esClientBean.setProperties(esConfig.getEsProperties());
+        esClientBean.setIndex(esConfig.getSongIndex());
         return esClientBean;
     }
 }
