@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class EsSongClient {
 
-    @Bean(initMethod = "init", destroyMethod = "close")
+    @Bean(initMethod = "init", destroyMethod = "close", name = "songClient")
     public EsClientBean buildEsSongClient(EsConfig esConfig) {
         EsClientBean esClientBean = new EsClientBean();
         esClientBean.setProperties(esConfig.getEsProperties());
